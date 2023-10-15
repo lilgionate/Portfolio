@@ -55,12 +55,13 @@ nav a:hover::before{
     width: 100%;
 }
 
-//ABOUT ME
+/**ABOUT ME**/
+
 section{
     display: flex;
 }
 
-#about-me{
+.left{
     float: left;
     color: darkblue;
     font-size: 150%;
@@ -68,7 +69,7 @@ section{
     margin-left: 50px;
 }
 
-#line-one{
+.line-left{
     float: left;
     height: 155px;
     border: 1px solid darkblue;
@@ -88,97 +89,28 @@ p{
 }
 
 
-//Sector 
-
-
-#work-me{
-    float: left;
-    color: darkblue;
-    font-size: 150%;
-    padding: 20px;
-    margin-left: 50px;
-}
-
-#line-two{
-    float: left;
-    height: 615px;
-    border: 1px solid darkblue;
-    margin-right: 40px;
-    margin-bottom: 10px;
-}
-
-
-
-#img1{
-    float: right;
-    width: 600px;
-    height: 300px;
-    border: 4px solid lightblue;
-}
-
-
-.img2{
-    flex-basis: 50%;
-    padding: 10px;
-    box-sizing: border-box;
-    width: 300px;
-    height: 150px;
-    border: 4px solid lightblue;
+/**Section**/ 
+.grid-container{
+    width: 60%;
+    display: grid;
     align-items: center;
-    float: right;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
-#title{
-    position: absolute;
-    padding: 5px;
-    transform: translate(79%, -140%);
-    background-color: lightblue;
-
+.item{
+ width: 50%;
+ grid-column: span 2;
 }
 
-#title-1{
-    position: absolute;
-    padding: 5px;
-    transform: translate(0%, 115%);
-    background-color: lightblue;
+#bigger{
+  width: 100%
 }
 
-#title-2{
-    position: absolute;
+
+.title{
+    /**position: absolute;**/
     padding: 5px;
-    transform: translate(0%, -135%);
     background-color: lightblue;
 }
 
-#title-3{
-    position: absolute;
-    padding: 5px;
-    transform: translate(0%, -390%);
-    background-color: lightblue;
-}
-
-#title-4{
-    position: absolute;
-    top: 110%;
-    padding: 5px;
-    transform: translate(0%, 505%);
-    background-color: lightblue;
-}
-
-
-
-#contact-me{
-    float: left;
-    color: darkblue;
-    font-size: 150%;
-    padding: 20px;
-    margin-left: -10px;
-}
-
-#line-three{
-    float: left;
-    height: 100px;
-    border: 1px solid darkblue;
-    margin-right: 40px;
-    margin-bottom: 10px;
-}
