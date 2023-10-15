@@ -1,0 +1,187 @@
+body{
+    line-height: 1.3;
+}
+
+header{
+    display: flex;
+    background-color: rgb(47, 47, 47);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    padding-left: 0;
+    color: grey;
+}
+
+h1{
+    font-size: 200%;
+    background-color: lightblue;
+    color: black;
+    padding-left: 30px;
+    padding-right: 5px;
+    margin-left: 0;
+}
+
+span{
+    color: grey;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+nav a{
+    color: lightblue;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    
+}
+
+nav a::before{
+    text-decoration: underline;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: lightblue;
+    transition: width 0.3s;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+//ABOUT ME
+section{
+    display: flex;
+}
+
+#about-me{
+    float: left;
+    color: darkblue;
+    font-size: 150%;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+#line-one{
+    float: left;
+    height: 155px;
+    border: 1px solid darkblue;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+
+.content{
+    margin: 10px;
+}
+
+p{
+    padding-bottom: 10px;
+    font-style: sans-serif;
+}
+
+
+//Sector 
+
+
+#work-me{
+    float: left;
+    color: darkblue;
+    font-size: 150%;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+#line-two{
+    float: left;
+    height: 615px;
+    border: 1px solid darkblue;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+
+
+#img1{
+    width: 600px;
+    height: 300px;
+    border: 4px solid lightblue;
+}
+
+#columns{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+}
+
+.img2{
+    flex-basis: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 150px;
+    border: 4px solid lightblue;
+    align-items: center;
+}
+
+#title{
+    position: absolute;
+    padding: 5px;
+    transform: translate(79%, -140%);
+    background-color: lightblue;
+
+}
+
+#title-1{
+    position: absolute;
+    padding: 5px;
+    transform: translate(0%, 115%);
+    background-color: lightblue;
+}
+
+#title-2{
+    position: absolute;
+    padding: 5px;
+    transform: translate(0%, -135%);
+    background-color: lightblue;
+}
+
+#title-3{
+    position: absolute;
+    padding: 5px;
+    transform: translate(0%, -390%);
+    background-color: lightblue;
+}
+
+#title-4{
+    position: absolute;
+    top: 110%;
+    padding: 5px;
+    transform: translate(0%, 505%);
+    background-color: lightblue;
+}
+
+
+
+#contact-me{
+    float: left;
+    color: darkblue;
+    font-size: 150%;
+    padding: 20px;
+    margin-left: -10px;
+}
+
+#line-three{
+    float: left;
+    height: 100px;
+    border: 1px solid darkblue;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
