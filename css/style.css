@@ -28,7 +28,7 @@ span{
 nav ul{
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
+    min-width: 350px;
 }
 
 nav a{
@@ -59,27 +59,48 @@ nav a:hover::before{
 
 section{
     display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .left{
     float: left;
     color: darkblue;
-    font-size: 150%;
-    padding: 20px;
-    margin-left: 50px;
+    font-size: 250%;
+    text-align: end;
 }
 
-.line-left{
+.left .me{
+    display: block;
+    color: darkblue;
+}
+
+#about-line{
     float: left;
-    height: 155px;
-    border: 1px solid darkblue;
-    margin-right: 40px;
-    margin-bottom: 10px;
+    height: 170px;
+    border: 2px solid darkblue;
+
+}
+
+#work-line{
+    float: left;
+    height: 750px;
+    border: 2px solid darkblue;
+   
+}
+
+#contact-line{
+    float: left;
+    height: 150px;
+    border: 2px solid darkblue;
+    
 }
 
 
 .content{
     margin: 10px;
+    padding-top: 10px;
+    width: 70%;
 }
 
 
@@ -90,27 +111,75 @@ p{
 
 
 /**Section**/ 
-.grid-container{
-    width: 60%;
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+main{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
 }
+
+.wrapper{
+    position: relative;
+}
+
+main #img{
+    width:100%;
+    border: 5px solid lightblue;
+}
+
+main .img{
+ width: 100%;
+ height: 150px;
+ border: 5px solid lightblue;
+}
+
 
 .item{
- width: 50%;
- grid-column: span 2;
-}
-
-#bigger{
-  width: 100%
+ width: 49%;
+ 
 }
 
 
 .title{
-    /**position: absolute;**/
+    position: absolute;
     padding: 5px;
     background-color: lightblue;
+    width: 30%;
+    text-align: start;
+    bottom: 25px;
 }
 
+.content-2{
+   height: 100px;
+   width: 70%;
+}
+
+.list{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 70px;
+}
+
+
+a{
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+a::before{
+    text-decoration: underline;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: darkblue;
+    transition: width 0.3s;
+}
+
+a:hover::before{
+    width: 100%;
+}
